@@ -1,5 +1,7 @@
 # Project Loom: Max Interfaces
 
+[![DOI](https://zenodo.org/badge/162623550.svg)](https://zenodo.org/badge/latestdoi/162623550)
+
 These are the Max/MSP interfaces for the control, monitoring, and processing of devices and data of a Loom network. 
 
 Each module contains a set of related functions and can receive, process, or output streams of data. Modules can be linked together to pass information from one to another. The set of data processor plugins include various means of reading any information from a network, a variety of modules to process, convert, or display this information, and modules to send data back out to devices on the network. 
