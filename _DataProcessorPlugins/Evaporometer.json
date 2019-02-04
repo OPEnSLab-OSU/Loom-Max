@@ -1,0 +1,12 @@
+{
+	"vbat"     : "0. 4.5",
+	"loadcell" : "0. 2000.",
+	"temp"     : "0. 50.",
+	"humid"    : "0. 100.",
+	"upper_vis": "0 10000",
+	"upper_ir": "0 10000",
+	"upper_full": "0 10000",
+	"lower_vis": "0 10000",
+	"lower_ir": "0 10000",
+	"lower_full": "0 10000"
+}
