@@ -37,6 +37,8 @@ function createBpatcher(file)
 				dimensions = ["150", "200"]; break;
 			case "ishield_monitor": 
 				dimensions = ["150", "220"]; break;
+			case "BEE222Inspect": 
+				dimensions = ["150", "220"]; break;
 			// case "channel_manager":
 				// dimensions = ["325", "250"]; break;
 			case "analog_monitor":

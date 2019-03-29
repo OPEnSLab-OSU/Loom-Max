@@ -2,13 +2,14 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
+			"major" : 8,
+			"minor" : 0,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 58.0, 116.0, 678.0, 683.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -47,7 +48,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 168.0, 269.0, 106.0, 22.0 ],
-					"style" : "",
 					"text" : "sprintf %s.maxpat"
 				}
 
@@ -75,7 +75,6 @@
 					"patching_rect" : [ 8.0, 8.197998, 111.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 7.0, 181.0, 24.0 ],
-					"style" : "",
 					"text" : "Patch Selector",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1
@@ -97,7 +96,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 11.0, 97.0, 169.0, 24.0 ],
 					"rounded" : 15.0,
-					"style" : "",
 					"text" : "Clear All Patches",
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textovercolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
@@ -121,7 +119,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 11.0, 69.0, 169.0, 24.0 ],
 					"rounded" : 15.0,
-					"style" : "",
 					"text" : "Clear Recent Patch",
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textovercolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
@@ -134,18 +131,17 @@
 				"box" : 				{
 					"allowdrag" : 0,
 					"id" : "obj-4",
-					"items" : [ "<Select", "Module>", ",", "channel_manager", ",", "-INPUT-", ",", "analog_monitor", ",", "decagon", ",", "multiplexer", ",", "ishield_monitor", ",", "-PROCESS-", ",", "analog_to_uv", ",", "rangeSetter", ",", "scaleCurve", ",", "scaleLin", ",", "smooth", ",", "threshold", ",", "-OUTPUT-", ",", "neopixel", ",", "relay", ",", "sd_controller", ",", "servo", ",", "servo_pan_tilt", ",", "stepper_motor", ",", "stepper_motor_extension", ",", "save_to_csv", ",", "-", "-", "LEGACY", "-", "-", ",", "-INPUT-", ",", "emote", ",", "midiIn", ",", "oscIn", ",", "-PROCESS-", ",", "3Dpan", ",", "chordDegree", ",", "concatenate", ",", "drumKit", ",", "movement", ",", "musicbox", ",", "rotaryDial", ",", "scaleDegree", ",", "sequencer", ",", "simpleSamp", ",", "spring", ",", "tapTempo", ",", "-OUTPUT-", ",", "App3DPan", ",", "AppVST", ",", "DMX", ",", "instrumentPosition", ",", "midiOut", ",", "oscOut", ",", "outlightsaber", ",", "switchblade" ],
+					"items" : [ "<Select", "Module>", ",", "channel_manager", ",", "-INPUT-", ",", "BEE222Inspect", ",", "analog_monitor", ",", "decagon", ",", "multiplexer", ",", "ishield_monitor", ",", "-PROCESS-", ",", "analog_to_uv", ",", "rangeSetter", ",", "scaleCurve", ",", "scaleLin", ",", "smooth", ",", "threshold", ",", "-OUTPUT-", ",", "neopixel", ",", "relay", ",", "sd_controller", ",", "servo", ",", "servo_pan_tilt", ",", "stepper_motor", ",", "stepper_motor_extension", ",", "save_to_csv", ",", "-", "-", "LEGACY", "-", "-", ",", "-INPUT-", ",", "emote", ",", "midiIn", ",", "oscIn", ",", "-PROCESS-", ",", "3Dpan", ",", "chordDegree", ",", "concatenate", ",", "drumKit", ",", "movement", ",", "musicbox", ",", "rotaryDial", ",", "scaleDegree", ",", "sequencer", ",", "simpleSamp", ",", "spring", ",", "tapTempo", ",", "-OUTPUT-", ",", "App3DPan", ",", "AppVST", ",", "DMX", ",", "instrumentPosition", ",", "midiOut", ",", "oscOut", ",", "outlightsaber", ",", "switchblade" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 111.0, 196.093994, 124.5, 22.0 ],
+					"patching_rect" : [ 111.0, 196.093994000000009, 124.5, 22.0 ],
 					"prefix" : "Macintosh HD:/Applications/Max6.1/Cycling '74/DataProcessorPlugins/",
 					"prefix_mode" : 2,
 					"presentation" : 1,
-					"presentation_rect" : [ 11.0, 39.093994, 169.0, 22.0 ],
-					"style" : ""
+					"presentation_rect" : [ 11.0, 39.093994000000002, 169.0, 22.0 ]
 				}
 
 			}
@@ -160,7 +156,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 111.0, 238.0, 106.0, 22.0 ],
-					"style" : "",
 					"text" : "sprintf %s.maxpat"
 				}
 
@@ -176,7 +171,6 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
 					"patching_rect" : [ 181.0, 406.0, 181.0, 22.0 ],
-					"style" : "",
 					"text" : "regexp .maxpat @substitute %0"
 				}
 
@@ -189,8 +183,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 88.0, 388.0, 20.0, 20.0 ],
-					"style" : ""
+					"parameter_enable" : 0,
+					"patching_rect" : [ 88.0, 388.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -205,7 +199,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 88.0, 353.0, 112.0, 22.0 ],
-					"style" : "",
 					"text" : "route bang <Select"
 				}
 
@@ -220,8 +213,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 389.0, 115.0, 25.0, 25.0 ],
-					"style" : ""
+					"patching_rect" : [ 389.0, 115.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -235,8 +227,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 88.0, 115.0, 25.0, 25.0 ],
-					"style" : ""
+					"patching_rect" : [ 88.0, 115.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -251,7 +242,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 389.0, 434.0, 91.0, 22.0 ],
-					"style" : "",
 					"text" : "deleteBpatcher"
 				}
 
@@ -267,7 +257,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 181.0, 434.0, 109.0, 22.0 ],
-					"style" : "",
 					"text" : "createBpatcher $1"
 				}
 
@@ -288,7 +277,6 @@
 						"parameter_enable" : 0
 					}
 ,
-					"style" : "",
 					"text" : "js processor.js"
 				}
 
@@ -305,11 +293,10 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 48.343994, 60.5, 37.5 ],
+					"patching_rect" : [ 8.0, 48.343994000000002, 60.5, 37.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 195.0, 130.0 ],
-					"proportion" : 0.39,
-					"style" : ""
+					"proportion" : 0.39
 				}
 
 			}
@@ -413,7 +400,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "processor.js",
-				"bootpath" : "~/Documents/Max 7/Library/_DataProcessorPlugins",
+				"bootpath" : "~/Documents/Max 8/Library/LoomMax3.25.19/_DataProcessorPlugins",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
